@@ -5,7 +5,14 @@ variable "bucket" {
   nullable    = false
 }
 
-variable "file" {
+variable "app_config_file" {
+  description = "Name of the config file"
+  type        = string
+  default     = "app-config.json"
+  nullable    = false
+}
+
+variable "terraform_state_file" {
   description = "Name of the config file"
   type        = string
   default     = "app-config.json"

@@ -1,4 +1,9 @@
-output "json_output" {
+output "app_config" {
   description = "Complete application configuration from JSON"
-  value       = local.json_output
+  value       = local.app_config
+}
+
+output "terraform_state" {
+  description = "Terraform state of an apply from many moons ago"
+  value       = local.terraform_state
 }
