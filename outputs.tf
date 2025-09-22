@@ -1,4 +1,4 @@
-output "app_config" {
+output "json_output" {
   description = "Complete application configuration from JSON"
-  value       = local.app_config
+  value       = local.json_output
 }
